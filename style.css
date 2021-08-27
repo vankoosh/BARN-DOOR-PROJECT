@@ -476,6 +476,12 @@ img[src*="left"] {
 
 
 /* ------------------------------GALERIA */
+
+#video {
+  display: flex;
+  justify-content: center;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -747,7 +753,11 @@ img[src*="left"] {
 
   .column {
     flex: 100%;
-    max-width: 100%;
+  }
+
+  #video {
+    width: 100px;
+    height: auto;
   }
 }
 
