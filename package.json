@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.0.1"
+  },
+  "name": "barn-door-project",
+  "version": "1.0.0",
+  "description": "barn-door project",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "barn-door project"
+  },
+  "author": "mario nano",
+  "license": "ISC"
+}
