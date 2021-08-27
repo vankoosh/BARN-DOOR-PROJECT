@@ -496,6 +496,8 @@ img[src*="left"] {
   flex: 33%;
   max-width: 33%;
   padding: 0 4px;
+  overflow: hidden;
+
 }
 
 .column-5 {
@@ -519,18 +521,22 @@ img[src*="left"] {
 .tltp {
   position: absolute;
   display: inline-block;
-  left: 0;
+  left: -200px;
   top: 0.5rem;
   z-index: 99;
-  visibility: hidden;
+  visibility: visible;
   background-color: #00000077;
-  padding: 0.5rem;
-  border-bottom-right-radius: 15px;
+  padding: 0.4rem 1rem .4rem .5rem;
   text-decoration: underline;
+  transition: .1s ease-in;
+  font-family: var(--main-font);
+  font-size: .8rem;
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+
 }
 
 .column div:hover .tltp {
-  visibility: visible;
+  left: 0;
 }
 
 /* MEDIA QUERIES */
