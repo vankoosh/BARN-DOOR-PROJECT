@@ -476,11 +476,16 @@ img[src*="left"] {
 }
 
 
-/* ------------------------------GALERIA */
+/* ------------------------------GALERIA A DVERE*/
 
 #video {
   display: flex;
   justify-content: center;
+}
+
+video {
+  width: 650px;
+  height: auto;
 }
 
 .row {
