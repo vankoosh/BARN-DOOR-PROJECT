@@ -283,7 +283,7 @@ a[href*="mailto"] {
   font-family: var(--main-font);
   padding: 2rem 20rem 2rem 20rem; 
   margin-top: 4rem;
-  background-color: #f3eaea;
+  background-color: #dad8d8;
   line-height: 2rem;
   letter-spacing: 0.05rem;
   text-align: center;
