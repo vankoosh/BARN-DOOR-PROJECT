@@ -3,7 +3,7 @@
 :root {
   --olive: #808000;
   --price-tag-bg: #ffd61f;
-  --bg-color: #ffffff;
+  --bg-color: #efddd1;
   --fancy-font: "Cormorant Infant", serif;
   --main-font: "Roboto Slab", serif;
 }
@@ -283,7 +283,8 @@ a[href*="mailto"] {
   font-family: var(--main-font);
   padding: 2rem 20rem 2rem 20rem; 
   margin-top: 4rem;
-  background-color: #dad8d8;
+  /* background-color: #dad8d8; */
+  background: linear-gradient(153deg, rgba(147,147,147,1) 0%, rgba(255,255,255,1) 70%);
   line-height: 2rem;
   letter-spacing: 0.05rem;
   text-align: center;
@@ -299,7 +300,6 @@ a[href*="mailto"] {
 
 .door-gallery {
   text-align: right;
-  background-color: #f3eaea;
   padding: 1rem;
   font-weight: bold;
 }
