@@ -500,8 +500,8 @@ img[src*="left"] {
 }
 
 .column {
-  flex: 33%;
-  max-width: 33%;
+  flex: 50%;
+  max-width: 50%;
   padding: 0 4px;
   overflow: hidden;
 
@@ -621,11 +621,6 @@ img[src*="left"] {
 
   #hero-sys {
     padding: 3rem 3rem;
-  }
-
-  .column {
-    flex: 33.333%;
-    max-width: 33.333%;
   }
 }
 
