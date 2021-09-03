@@ -1,7 +1,7 @@
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css";
 
 :root {
-  --olive: #808000ad;
+  --olive: #808000;
   --price-tag-bg: #ffd61f;
   --bg-color: #fff8f4;
   --fancy-font: "Cormorant Infant", serif;
@@ -259,7 +259,6 @@ a[href*="mailto"] {
 }
 .card-main {
   display: inline-block;
-  border: 2px solid var(--olive);
   height: 220px;
   width: 320px;
   border-radius: 4px;
@@ -523,6 +522,7 @@ video {
   vertical-align: middle;
   width: 100%;
   border: 2px solid #808080;
+  position: relative;
 }
 
 .column div {
@@ -545,11 +545,22 @@ video {
   font-family: var(--main-font);
   font-size: .8rem;
   clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
-
 }
 
 .column div:hover .tltp {
   left: 0;
+}
+
+.pic-num {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.5rem;
+  background-color: #fff;
+  padding: 3px;
+  font-family: var(--main-font);
+  border-bottom: 2px solid #808080;
+  border-right: 2px solid #808080;
 }
 
 /* MEDIA QUERIES */
