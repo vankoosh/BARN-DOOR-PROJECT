@@ -23,6 +23,8 @@ a:hover {
 body {
   background-color: var(--bg-color);
   padding-top: 2rem;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .container-fluid {
@@ -202,6 +204,36 @@ img[alt*="facebook"] {
   z-index: 99;
   width: 60px;
   height: 60px;
+}
+
+#triangle__left {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 1rem;
+  top: 40%;
+  opacity: 0.7;
+  transform: rotate(90deg);
+}
+
+#triangle__right {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 1rem;
+  top: 39%;
+  opacity: 0.7;
+  transform: rotate(30deg);
+}
+
+.alert {
+  width: 100%;
+  height: auto;
+  position: relative;
+  height: 30rem;
+  z-index: 99;
+  padding: 0 4rem;
+  background-color: rgb(255, 121, 121);
 }
 
 #kontakt {
