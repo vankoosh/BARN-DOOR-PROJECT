@@ -206,7 +206,7 @@ img[alt*="facebook"] {
   height: 60px;
 }
 
-#triangle__left {
+/* #triangle__left {
   height: 50px;
   width: 50px;
   position: absolute;
@@ -224,16 +224,19 @@ img[alt*="facebook"] {
   top: 39%;
   opacity: 0.7;
   transform: rotate(30deg);
-}
+} */
 
 .alert {
   width: 100%;
   height: auto;
   position: relative;
-  height: 30rem;
+  margin: 2rem 0 0 0 ;
+  padding: 0;
+  overflow: hidden;
+  /* height: 30rem; */
   z-index: 99;
-  padding: 0 4rem;
-  background-color: rgb(255, 121, 121);
+  /* padding: 0 4rem; */
+  /* background-color: rgb(255, 200, 200); */
 }
 
 #kontakt {
