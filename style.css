@@ -206,37 +206,13 @@ img[alt*="facebook"] {
   height: 60px;
 }
 
-/* #triangle__left {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 1rem;
-  top: 40%;
-  opacity: 0.7;
-  transform: rotate(90deg);
-}
-
-#triangle__right {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  right: 1rem;
-  top: 39%;
-  opacity: 0.7;
-  transform: rotate(30deg);
-} */
-
-.alert {
+.alert img{
   width: 100%;
-  height: auto;
   position: relative;
   margin: 2rem 0 0 0 ;
   padding: 0;
   overflow: hidden;
-  /* height: 30rem; */
   z-index: 99;
-  /* padding: 0 4rem; */
-  /* background-color: rgb(255, 200, 200); */
 }
 
 #kontakt {
@@ -506,6 +482,14 @@ img[src*="left"] {
   background-color: var(--price-tag-bg);
   border-radius: 2rem;
   user-select: none;
+}
+
+#akcia {
+  background-color: #f00;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  color: #fff;
 }
 
 
