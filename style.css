@@ -212,12 +212,11 @@ img[alt*="facebook"] {
   margin: 2rem 0 0 0 ;
   padding: 0;
   z-index: 99;
-  display: block;
 }
 
-#offer1 {
+/* #offer1 {
   display: none;
-}
+} */
 
 #kontakt {
   width: 60%;
@@ -730,7 +729,7 @@ video {
     max-width: 100%;
   }
 
-  #offer {
+  /* #offer {
     display:none;
   }
 
@@ -741,7 +740,7 @@ video {
   padding: 0;
   z-index: 99;
   display: block;
-}
+} */
 }
 
 @media only screen and (max-width: 900px) {
