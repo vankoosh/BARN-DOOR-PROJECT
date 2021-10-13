@@ -206,13 +206,17 @@ img[alt*="facebook"] {
   height: 60px;
 }
 
-.alert img{
+#offer {
   width: 100%;
   position: relative;
   margin: 2rem 0 0 0 ;
   padding: 0;
-  overflow: hidden;
   z-index: 99;
+  display: block;
+}
+
+#offer1 {
+  display: none;
 }
 
 #kontakt {
@@ -725,6 +729,19 @@ video {
     flex: 100%;
     max-width: 100%;
   }
+
+  #offer {
+    display:none;
+  }
+
+  #offer1 {
+  width: 100%;
+  position: relative;
+  margin: 2rem 0 0 0 ;
+  padding: 0;
+  z-index: 99;
+  display: block;
+}
 }
 
 @media only screen and (max-width: 900px) {

@@ -64,12 +64,13 @@
 
   <!-- ALERT BANNER-->
 
-  <div class="alert">
+  <div>
     <span id="kon"></span>
-    <img src="UTILITIES/IMGS/offer-banner.jpg" alt="">
+    <img id="offer" src="UTILITIES/IMGS/offer-banner.jpg" alt="specialna ponuka">
+    <img id="offer1" src="UTILITIES/IMGS/offer-banner1.jpg" alt="specialna ponuka">
   </div>
 
-  <!-- KONTAKT A ADRESA -->
+  <!-- CONTACT AND ADDRESS -->
 <section>
   <div id="kontakt">
     <div id="adresa">
@@ -109,6 +110,7 @@
 
     // LOGO IN NAVBAR MOVES WHEN SCROLLED DOWN
     const logo = document.querySelector("#logo");
+    const banner = document.querySelector('#offer');
 
     window.addEventListener("scroll", (event) => {
       let scroll = this.scrollY;
@@ -124,7 +126,7 @@
         logo.style.top = "-0.6rem";
       }
     }
-  </script>
+    </script>
 
 </body>
 </html>
