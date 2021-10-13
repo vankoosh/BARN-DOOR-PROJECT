@@ -785,6 +785,14 @@ video {
     width: 40px;
   }
 
+  #hero__button {
+    /* top: 15rem;
+    width: 10rem;
+    font-size: 0.7rem; */
+    padding-top: 0.5rem;
+    height: 2rem;
+  }
+
   .column {
     flex: 100%;
   }
@@ -800,8 +808,8 @@ video {
     top: 13rem;
     width: 10rem;
     font-size: 0.7rem;
-    padding-top: 0.7rem;
-    height: 2.5rem;
+    padding-top: 0.5rem;
+    height: 2rem;
   }
 }
 
