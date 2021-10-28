@@ -1,6 +1,6 @@
 :root {
-  --olive: #808000;
-  --price-tag-bg: #ffd61f;
+  --fancy-color: #808000;
+  --price-tag-bg: #808000;
   --bg-color: #fff8f4;
   --fancy-font: "Cormorant Infant", serif;
   --main-font: "Roboto Slab", serif;
@@ -166,7 +166,7 @@ body {
 
 #hero__text h1 {
   font-family: var(--fancy-font);
-  color: var(--olive);
+  color: var(--fancy-color);
   font-size: calc(2.2vw + 1rem);
   user-select: none;
   text-shadow: 2px 2px 20px #503d3d;
@@ -183,7 +183,7 @@ body {
   left: 60vw;
   width: 15rem;
   height: 3rem;
-  background-color: var(--olive);
+  background-color: var(--fancy-color);
   border-radius: 2.1rem;
   text-align: center;
   color: white;
@@ -398,7 +398,7 @@ img[src*="left"] {
   top: -5rem;
   font-size: 0.8rem;
   opacity: 1;
-  color: #ff0000;
+  color: #808000;
 }
 
 /* ------------------------------------CARDS */
@@ -703,7 +703,7 @@ video {
 
   #hero__text h1 {
     font-size: calc(2vw + 0.9rem);
-    color: var(--olive);
+    color: var(--fancy-color);
   }
 
   #hero__button {
