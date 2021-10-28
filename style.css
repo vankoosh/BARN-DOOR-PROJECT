@@ -11,6 +11,22 @@
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  width: .8em;
+  height: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+  margin-block: .5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: .5em;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
