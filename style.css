@@ -449,7 +449,7 @@ img[src*="left"] {
   margin-bottom: 2rem;
   position: relative;
   height: 240px;
-
+  color: #000000c7;
 }
 
 .ttip {
