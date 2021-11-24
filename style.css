@@ -895,3 +895,20 @@ video {
     border-bottom-right-radius: 0px;
   }
 }
+
+
+#carousel {
+  max-width: 812px;
+  max-height: 397px;
+  margin: 4em auto 397px auto;
+  /* overflow: visible; */
+  /* display: flex; */
+}
+
+#carousel__img1,
+#carousel__img2,
+#carousel__img3,
+#carousel__img4,
+#carousel__img5 {
+  position: absolute;
+}
