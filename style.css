@@ -470,7 +470,7 @@ img[src*="left"] {
   opacity: 1;
 }
 
-.card-sys__text p {
+.card-sys__text p:not(.akcia) {
   margin: 0.5rem 0 0 5rem;
 }
 
