@@ -65,7 +65,7 @@
 
   <!-- ALERT BANNER-->
 
-  <div>
+  <div id="offer-container">
     <span id="kon"></span>
     <img id="offer" alt="specialna ponuka">
     <!-- <img id="offer1" src="UTILITIES/IMGS/offer-banner1.jpg" alt="specialna ponuka"> -->
@@ -129,26 +129,24 @@
     // CHANGE OFFER BANNER ACCORDING TO VIEWPORT SIZE
     // PURELY FOR EXCERCISE PURPOSES, EASIER WAY TO DO THIS IS THRU @media QUERY
 
-    //catch initial window width
       let windowWidth = window.innerWidth;
-    //target html element
       const offer = document.querySelector('#offer');
-    //determine initial viewport width and set appropriate banner
+
     window.onload = (e) => {
-      if(windowWidth >= 1000) {
+      if(windowWidth >= 1200) {
         offer.src = 'UTILITIES/IMGS/offer-banner.jpg';
         
-      }else if(windowWidth < 1000){
+      }else if(windowWidth < 1200){
         offer.src = 'UTILITIES/IMGS/offer-banner1.jpg';
       }
     }
-    //listen to window resize and according to viewport width, set src attribute and change offer banner
+
     window.onresize = (e) => {
       windowWidth = this.window.innerWidth;
       console.log(windowWidth);
-      if (windowWidth >= 1000) {
+      if (windowWidth >= 1200) {
         offer.src = 'UTILITIES/IMGS/offer-banner.jpg';
-      } else if (windowWidth < 1000) {
+      } else if (windowWidth < 1200) {
         offer.src = 'UTILITIES/IMGS/offer-banner1.jpg';
       }
     }

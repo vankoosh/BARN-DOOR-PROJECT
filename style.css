@@ -221,10 +221,14 @@ img[alt*="facebook"] {
   height: 60px;
 }
 
+#offer-container {
+  width: 70%;
+  margin: 2rem auto;
+}
+
 #offer {
   width: 100%;
   position: relative;
-  margin: 2rem 0 0 0 ;
   padding: 0;
   z-index: 99;
 }
@@ -596,17 +600,7 @@ video {
 }
 
 
-
-
-
-
 /* MEDIA QUERIES */
-
-
-
-
-
-
 
 @media only screen and (max-width: 1720px) {
   .card-sys {
@@ -621,8 +615,8 @@ video {
     width: 350px;
   }
 
-  .card-sys__text p {
-    margin: 0.5rem 0 0 3rem;
+  .card-sys__text p:not(.akcia) {
+    margin: 0.5rem 0 0 4rem !important;
   }
 
   .card-sys__text h4 {
@@ -852,6 +846,23 @@ video {
     width: 10px;
     height:10px;
   }
+
+  #offer-container {
+    width: 100%;
+  }
+
+  .door-gallery {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+  img[src*="right"],
+  img[src*="left"] {
+    width: 1.3rem;
+    height: 1.3rem;
+    bottom: -0.2rem;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -894,4 +905,8 @@ video {
     bottom: -2.5rem;
     border-bottom-right-radius: 0px;
   }
+
+  img[alt*="facebook"] {
+  left: 5px;
+}
 }
