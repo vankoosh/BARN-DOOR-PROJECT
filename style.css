@@ -482,6 +482,7 @@ img[src*="left"] {
   margin-bottom: 2rem;
   text-align: center;
   font-weight: bold;
+  color: var(--price-tag-bg);
 }
 
 .card-sys__text h5 {
