@@ -316,7 +316,7 @@ a[href*="mailto"] {
   letter-spacing: 0.05rem;
   text-align: center;
   font-weight: 500;
-  color: #000000a6;
+  color: #000000ce;
   font-style: italic;
 }
 
@@ -337,7 +337,7 @@ a[href*="mailto"] {
 }
 
 .door-gallery a {
-  color: #8080008c;
+  color: #80800096;
   position: relative;
   margin-right: 6rem;
 }
