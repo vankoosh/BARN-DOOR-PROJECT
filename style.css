@@ -304,23 +304,24 @@ a[href*="mailto"] {
   height: 105%;
 }
 
-/* --------------------------------SYSTEMY A DOPLNKY*/
+/* --------------------------------SYSTEMY AND DOPLNKY*/
 
 #hero-sys {
   font-family: var(--main-font);
+  font-size: .8rem;
   padding: 2rem 20rem 2rem 20rem; 
   margin-top: 4rem;
-  background: linear-gradient(153deg, rgba(147,147,147,1) 0%, rgba(255,255,255,1) 70%);
+  background: linear-gradient(153deg, rgba(147, 147, 147, 0.733) 0%, #fff8f400 40%);
   line-height: 2rem;
   letter-spacing: 0.05rem;
   text-align: center;
   font-weight: 500;
-  color: #000000d5;
+  color: #000000a6;
   font-style: italic;
 }
 
 #hero-sys b {
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: .9;
 }
 
@@ -336,31 +337,31 @@ a[href*="mailto"] {
 }
 
 .door-gallery a {
-  color: #808000;
+  color: #8080008c;
   position: relative;
   margin-right: 6rem;
 }
 
 .door-gallery a:hover {
-  color: #808000;
+  color: #80800088;
 }
 
 img[src*="right"] {
   position: absolute;
-  bottom: -.4rem;
+  bottom: -.2rem;
   right: -5rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   margin-right: 3rem;
   transition: .3s ease-in-out;
 }
 
 img[src*="left"] {
   position: absolute;
-  bottom: -.4rem;
+  bottom: -.2rem;
   right: 5.5rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   margin-right: 3rem;
   transition: .3s ease-in-out;
 }
@@ -417,7 +418,7 @@ img[src*="left"] {
   top: -5rem;
   font-size: 0.8rem;
   opacity: 1;
-  color: #808000;
+  color: #808000a6;
 }
 
 /* ------------------------------------CARDS */
@@ -680,7 +681,7 @@ video {
   }
 
   #hero-sys {
-    padding: 3rem 3rem;
+    padding: 3rem 8rem;
   }
 
   .row {
@@ -708,6 +709,22 @@ video {
 
   .navbar-collapse {
     padding-top: 2rem;
+  }
+
+  img[src*="right"] {
+    bottom: -.4rem;
+    right: -5rem;
+    width: calc(1vw + .9rem);
+    height: calc(1vw + .9rem);
+    margin-right: 3rem;
+  }
+
+  img[src*="left"] {
+    bottom: -.4rem;
+    right: 5.5rem;
+    width: calc(1vw + .9rem);
+    height: calc(1vw + .9rem);
+    margin-right: 3rem;
   }
 }
 
@@ -751,6 +768,19 @@ video {
     flex: 100%;
     max-width: 100%;
   }
+
+  #disclaimer {
+    font-size: calc(.9vw + .3rem);
+  }
+
+  #hero-sys b {
+  font-size: calc(.9vw + .5rem);
+}
+  .door-gallery a {
+    /* font-size: 0.7rem; */
+    font-size: calc(.9vw + .3rem);
+  }
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -789,6 +819,10 @@ video {
   img[alt*="facebook"] {
     width: 40px;
     height: 40px;
+  }
+
+  #hero-sys {
+    font-size: calc(0.7vw + .5rem);
   }
 }
 
@@ -857,8 +891,7 @@ video {
     width: 100%;
   }
 
-  .door-gallery {
-  font-size: 0.8rem;
+  .door-gallery a{
   text-align: center;
 }
 
