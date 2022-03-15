@@ -505,6 +505,10 @@ img[src*="left"] {
   user-select: none;
 }
 
+#horr-hack {
+  font-size: 1rem;
+}
+
 .akcia {
   background-color: #f00;
   text-align: center;
