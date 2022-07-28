@@ -882,6 +882,10 @@ video {
     font-size: 1.2rem;
   }
 
+  #hero-sys{
+    padding: 2rem 1rem;
+  }
+
   a[alt*="facebook"] {
     width: 10px;
     height:10px;
