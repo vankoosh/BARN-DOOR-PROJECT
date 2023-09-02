@@ -1,0 +1,23 @@
+{
+  "name": "barn-door-project",
+  "version": "1.0.0",
+  "description": "barn door page",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vankoosh/BARN-DOOR-PROJECT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vankoosh/BARN-DOOR-PROJECT/issues"
+  },
+  "homepage": "https://barn-door.sk/",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2"
+  }
+}

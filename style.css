@@ -285,6 +285,7 @@ a[href*="mailto"] {
   text-align: center;
   margin-bottom: 1rem;
 }
+
 .card-main {
   display: inline-block;
   height: 220px;
@@ -299,6 +300,7 @@ a[href*="mailto"] {
   user-select: none;
   transition: width 0.5s, height 0.5s;
 }
+
 .card-main img:hover {
   width: 105%;
   height: 105%;
@@ -309,7 +311,7 @@ a[href*="mailto"] {
 #hero-sys {
   font-family: var(--main-font);
   font-size: .8rem;
-  padding: 2rem 20rem 2rem 20rem; 
+  padding: 2rem 20rem 2rem 20rem;
   margin-top: 4rem;
   background: linear-gradient(153deg, rgba(147, 147, 147, 0.733) 0%, #fff8f400 40%);
   line-height: 2rem;
@@ -366,11 +368,11 @@ img[src*="left"] {
   transition: .3s ease-in-out;
 }
 
-.door-gallery a:hover img[src*="right"]{
+.door-gallery a:hover img[src*="right"] {
   margin-right: 2rem;
 }
 
-.door-gallery a:hover img[src*="left"]{
+.door-gallery a:hover img[src*="left"] {
   margin-right: 4rem;
 }
 
@@ -560,7 +562,8 @@ video {
   padding: 0 4px;
 }
 
-.column img, .column-5 img {
+.column img,
+.column-5 img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -662,7 +665,7 @@ video {
   }
 }
 
-@media only screen and (max-width: 1460px){
+@media only screen and (max-width: 1460px) {
   #hero__button {
     top: 28rem;
     font-size: 1rem;
@@ -774,8 +777,9 @@ video {
   }
 
   #hero-sys b {
-  font-size: calc(.9vw + .5rem);
-}
+    font-size: calc(.9vw + .5rem);
+  }
+
   .door-gallery a {
     /* font-size: 0.7rem; */
     font-size: calc(.9vw + .3rem);
@@ -882,22 +886,22 @@ video {
     font-size: 1.2rem;
   }
 
-  #hero-sys{
+  #hero-sys {
     padding: 2rem 1rem;
   }
 
   a[alt*="facebook"] {
     width: 10px;
-    height:10px;
+    height: 10px;
   }
 
   #offer-container {
     width: 100%;
   }
 
-  .door-gallery a{
-  text-align: center;
-}
+  .door-gallery a {
+    text-align: center;
+  }
 
   img[src*="right"],
   img[src*="left"] {
@@ -910,7 +914,7 @@ video {
 
 @media only screen and (max-width: 500px) {
   #hero__img {
-    opacity: 0.5;
+    opacity: 0.1;
   }
 
   #hero__text {
@@ -938,6 +942,7 @@ video {
 }
 
 @media only screen and (max-width: 420px) {
+
   #adresa,
   #otvhod {
     width: 100%;
@@ -950,6 +955,6 @@ video {
   }
 
   img[alt*="facebook"] {
-  left: 5px;
-}
+    left: 5px;
+  }
 }
