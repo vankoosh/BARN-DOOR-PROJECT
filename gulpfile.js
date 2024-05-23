@@ -19,7 +19,7 @@ gulp.task("watch", () => {
   });
 
   // Watch CSS files and trigger a reload on change
-  gulp.watch("./*.css").on("change", () => {
+  gulp.watch(["./*.css", "./*.js"]).on("change", () => {
     // Reload the browser
     browserSync.reload();
   });

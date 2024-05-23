@@ -221,18 +221,25 @@ img[alt*="facebook"] {
   height: 60px;
 }
 
-#offer-container {
-  width: 70%;
-  margin: 2rem auto;
+.offer-container {
+  padding: 3rem 0 0;
 }
 
-#offer {
+.offer__desktop,
+.offer__mobile {
   width: 100%;
-  position: relative;
-  padding: 0;
-  z-index: 99;
 }
 
+.offer__desktop {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.offer__mobile {
+  display: none;
+}
 
 #kontakt {
   width: 60%;
@@ -609,8 +616,9 @@ video {
   border-right: 2px solid #808080;
 }
 
-
+/* ************* */
 /* MEDIA QUERIES */
+/* ************* */
 
 @media only screen and (max-width: 1720px) {
   .card-sys {
@@ -698,6 +706,10 @@ video {
   }
 }
 
+@media only screen and (min-width: 1199px) {
+  .offer__desktop {}
+}
+
 @media only screen and (max-width: 1199px) {
   #hero__text {
     top: 12rem;
@@ -781,7 +793,6 @@ video {
   }
 
   .door-gallery a {
-    /* font-size: 0.7rem; */
     font-size: calc(.9vw + .3rem);
   }
 
@@ -831,6 +842,14 @@ video {
 }
 
 @media only screen and (max-width: 735px) {
+  .offer__desktop {
+    display: none;
+  }
+
+  .offer__mobile {
+    display: block;
+    padding: 3rem 0 0;
+  }
 
   #kontakt {
     flex-direction: column;
@@ -850,9 +869,6 @@ video {
   }
 
   #hero__button {
-    /* top: 15rem;
-    width: 10rem;
-    font-size: 0.7rem; */
     padding-top: 0.5rem;
     height: 2rem;
   }
@@ -893,10 +909,6 @@ video {
   a[alt*="facebook"] {
     width: 10px;
     height: 10px;
-  }
-
-  #offer-container {
-    width: 100%;
   }
 
   .door-gallery a {

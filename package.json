@@ -17,7 +17,8 @@
   },
   "homepage": "https://barn-door.sk/",
   "devDependencies": {
-    "browser-sync": "^2.29.3",
-    "gulp": "^4.0.2"
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
+    "prettier": "3.2.5"
   }
 }

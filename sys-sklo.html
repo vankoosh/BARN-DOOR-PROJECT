@@ -19,7 +19,6 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-xl sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -55,21 +54,22 @@
   <header>
     <div id="hero-sys">
       <q>Naša firma prináša na európsky trh posuvné systémy vhodné ako alternatíva dverí do bytových interierov,
-      reštaurácií,
-      obchodov ale aj exteriérov. Systém BARNDOOR môže byt navrhnutý nielen ako alternatíva klasických dverí, ale aj
-      štýlovo a
-      účelovo rozdeľovať priestor ako šatníky, jedálne, vstavané skrine a podobne.</q><br><br>
+        reštaurácií,
+        obchodov ale aj exteriérov. Systém BARNDOOR môže byt navrhnutý nielen ako alternatíva klasických dverí, ale aj
+        štýlovo a
+        účelovo rozdeľovať priestor ako šatníky, jedálne, vstavané skrine a podobne.</q><br><br>
       <b>Skrátka všade tam, kde siaha fantázia Vašich predstáv o umiestnení dverí.</b>
     </div>
   </header>
   <h2 id="title-sys">POSUVNÉ SYSTÉMY NA SKLO</h2>
   <main>
     <div class="container-sys">
-      <p id="disclaimer">* Ceny za 1 set vrátane DPH<br>* V prípade požiadavky dlhšej koľajničky<br> je povrchová úprava náterom namiesto práškovania</p>
+      <p id="disclaimer">* Ceny za 1 set vrátane DPH<br>* V prípade požiadavky dlhšej koľajničky<br> je povrchová úprava
+        náterom namiesto práškovania</p>
       <div class="card-sys">
         <div class="overlay">
-          <img src="UTILITIES/IMGS/sys-4-sklo/1/1.jpg" alt="system g1 cena 159" width="450"  class="card-sys__img">
-          <img src="UTILITIES/IMGS/sys-4-sklo/1/1ov.jpg" alt="" class="overlay__img" width="450" >
+          <img src="UTILITIES/IMGS/sys-4-sklo/1/1.jpg" alt="system g1 cena 159" width="450" class="card-sys__img">
+          <img src="UTILITIES/IMGS/sys-4-sklo/1/1ov.jpg" alt="" class="overlay__img" width="450">
         </div>
         <div class="card-sys__text">
           <span class="ttip">Objednávky prosíme zaslať<br>mailom alebo telefonicky</span>
@@ -84,8 +84,8 @@
       </div>
       <div class="card-sys">
         <div class="overlay">
-          <img src="UTILITIES/IMGS/sys-4-sklo/2/2.jpg" alt="system g2 cena 159" width="450"  class="card-sys__img">
-          <img src="UTILITIES/IMGS/sys-4-sklo/2/2ov.jpg" alt="" class="overlay__img" width="450" >
+          <img src="UTILITIES/IMGS/sys-4-sklo/2/2.jpg" alt="system g2 cena 159" width="450" class="card-sys__img">
+          <img src="UTILITIES/IMGS/sys-4-sklo/2/2ov.jpg" alt="" class="overlay__img" width="450">
         </div>
         <div class="card-sys__text">
           <span class="ttip">Objednávky prosíme zaslať<br>mailom alebo telefonicky</span>
@@ -100,8 +100,8 @@
       </div>
       <div class="card-sys">
         <div class="overlay">
-          <img src="UTILITIES/IMGS/sys-4-sklo/3/3.jpg" alt="system g3 cena 159" width="450"  class="card-sys__img">
-          <img src="UTILITIES/IMGS/sys-4-sklo/3/3ov.png" alt="" class="overlay__img" width="450" >
+          <img src="UTILITIES/IMGS/sys-4-sklo/3/3.jpg" alt="system g3 cena 159" width="450" class="card-sys__img">
+          <img src="UTILITIES/IMGS/sys-4-sklo/3/3ov.png" alt="" class="overlay__img" width="450">
         </div>
         <div class="card-sys__text">
           <span class="ttip">Objednávky prosíme zaslať<br>mailom alebo telefonicky</span>
@@ -117,30 +117,14 @@
     </div>
   </main>
 
-
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
 
-  <script>
-    
-    // LOGO IN NAVBAR MOVES WHEN SCROLLED DOWN
-    const logo = document.querySelector("#logo");
-
-    window.addEventListener("scroll", (event) => {
-      let scroll = this.scrollY;
-      console.log(scroll);
-      logoDown(scroll);
-    });
-
-    function logoDown(scroll) {
-      if (scroll >= 22) {
-        logo.style.top = "0rem";
-      }
-      else {
-        logo.style.top = "-0.6rem";
-      }
-    }
-  </script>
+  <script src="./app.js" type="module"></script>
+  <noscript>
+    <img height="1" width="1" style="display: none"
+      src="https://www.facebook.com/tr?id=787180756425947&ev=PageView&noscript=1" />
+  </noscript>
 </body>
