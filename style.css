@@ -233,6 +233,7 @@ img[alt*="facebook"] {
 .offer__desktop {
   display: block;
   width: 80%;
+  max-width: 1440px;
   margin: 0 auto;
   border-radius: 1rem;
 }

@@ -19,5 +19,8 @@
   "devDependencies": {
     "browser-sync": "^3.0.2",
     "gulp": "^5.0.0"
+  },
+  "dependencies": {
+    "swiper": "^11.1.14"
   }
 }
