@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 var browserSync = require("browser-sync").create();
+var { spawn } = require('child_process');
 
-// TOP LEVEL GULP FUNCTIONS
 // https://www.youtube.com/watch?v=1rw9MfIleEg
 // gulp.task - define tasks
 // gulp.src - point to files to use
@@ -9,21 +9,25 @@ var browserSync = require("browser-sync").create();
 // gulp.watch - folders and files to watch for changes
 // .pipe()
 // done();
-// .watch(["style.css"]).on("change", console.log("RELOAD AFTER CSS CHANGE..."));
 
-// Define a task to watch CSS files and refresh the browser
 gulp.task("watch", () => {
-  // Initialize BrowserSync with your project's base directory
   browserSync.init({
     server: "./", // Change this to your project's base directory if needed
   });
 
-  // Watch CSS files and trigger a reload on change
-  gulp.watch(["./*.css", "./*.js"]).on("change", () => {
-    // Reload the browser
-    browserSync.reload();
-  });
+  gulp
+    .watch(["./*.html", "./styles/*.css", "./scripts/*.ts", "./scripts/*.js"])
+    .on("change", () => {
+      browserSync.reload();
+    });
 });
 
-// Default task (run 'gulp' in the terminal to start watching)
-gulp.task("default", gulp.series("watch"));
+gulp.task('ls', function () {
+  const executeLS = spawn('ls');
+  executeLS.stdout.on('data', (data) => {
+    console.log(`stdout: ${data}`);
+  });
+  return executeLS;
+});
+
+gulp.task("default", gulp.series("watch", "ls"));

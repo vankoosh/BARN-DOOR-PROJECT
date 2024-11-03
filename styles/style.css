@@ -6,6 +6,10 @@
   --main-font: "Roboto Slab", serif;
 }
 
+html {
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -272,6 +276,45 @@ a[href*="mailto"] {
 
 #otvhod span {
   font-size: 0.7rem;
+}
+
+.contact-form {
+  width: 100%;
+
+  .contact-form__inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.cookie-banner {
+  position: fixed;
+  width: 80%;
+  max-width: 40rem;
+  display: flex;
+  inset: auto 1rem 1rem 1rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000d1;
+  padding: 1.5rem;
+  z-index: 100;
+
+  .cookie-banner__text {
+    color: white;
+    font-size: 0.75rem;
+  }
+
+  .cookie-banner__close {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+  }
+
+}
+
+.cookie-banner--hidden {
+  display: none;
 }
 
 /* -----------------------SYSTEMY SELECTION PAGE */
@@ -707,10 +750,6 @@ video {
   }
 }
 
-@media only screen and (min-width: 1199px) {
-  .offer__desktop {}
-}
-
 @media only screen and (max-width: 1199px) {
   #hero__text {
     top: 12rem;
@@ -824,6 +863,11 @@ video {
   #title-sys:before,
   #title-sys::after {
     width: 100px;
+  }
+
+  .cookie-banner {
+    width: 95%;
+    inset: auto 1rem 1rem 1rem;
   }
 }
 
