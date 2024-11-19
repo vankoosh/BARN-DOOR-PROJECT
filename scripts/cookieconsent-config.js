@@ -112,7 +112,7 @@ CookieConsent.run({
         preferencesModal: {
           title: 'Podrobnosti cookies',
           acceptAllBtn: 'Prijať všetko',
-          acceptNecessaryBtn: 'Odmietnut všetko',
+          acceptNecessaryBtn: 'Odmietnuť všetko',
           savePreferencesBtn: 'Prijať selekciu',
           closeIconLabel: 'Zavrieť',
           serviceCounterLabel: 'Service|Services',
