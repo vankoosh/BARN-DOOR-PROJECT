@@ -22,6 +22,7 @@
     "gulp": "^5.0.0"
   },
   "dependencies": {
-    "swiper": "^11.1.14"
+    "swiper": "^11.1.14",
+    "vanilla-cookieconsent": "^3.0.1"
   }
 }
