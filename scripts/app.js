@@ -30,7 +30,7 @@ fbq('track', 'PageView');
 const uhlikoveSystemyArray = ["Vyberte systém, o ktorý máte záujem",
   "Systém RLD 08", "Systém RLD 08 Biely", "Systém RLD 09", "Systém RLD 10", "Systém RLD 11", "Systém RLD 12", "Systém RLD 13", "Systém RLD 14", "Systém RLD 16", "Systém RLD 17", "Systém RLD 18", "Systém RLD 19", "Systém RLD 20", "Systém RLD 21", "Systém RLD 22", "Systém RLD 23", "Systém RLD 24", "Systém RLD 25", "Systém RLD 26", "Systém RLD 27", "Systém RLD 28", "Systém RLD 29", "Rebrik R1"]
 
-const nerezSystemyArray = ["S8", "S9", "S11", "S12", "S13", "S15", "S17", "S18"]
+const nerezSystemyArray = ["Systém S8", "Systém S9", "Systém S11", "Systém S12", "Systém S13", "Systém S15", "Systém S17", "Systém S18"]
 
 const patinaSystemyArray = ["Patina HRDZA", "Patina ZELENA", "Patina BRONZ", "Patina BRONZ P5"]
 
