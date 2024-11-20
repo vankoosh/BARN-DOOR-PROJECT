@@ -22,7 +22,8 @@
   }
 
   .contact-form__inputs input,
-  textarea {
+  textarea,
+  select {
     border: 1px solid lightgray;
   }
 
@@ -40,5 +41,35 @@
     padding: 0.4rem 1rem;
     font-size: 1.3rem;
     border: 0;
+  }
+
+  option,
+  select {
+    font-size: 0.75rem;
+  }
+
+  select {
+    position: relative;
+    color: gray;
+    width: 100%;
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    background: url("/UTILITIES/IMGS/chevron-down.png") no-repeat right white;
+    appearance: none;
+    background-position-x: 95%;
+
+  }
+
+  @media only screen and (min-width: 768px) {
+    .contact-form__inputs {
+      flex-direction: row;
+      gap: 0;
+    }
+
+    input,
+    select {
+      width: 33%;
+    }
   }
 }
