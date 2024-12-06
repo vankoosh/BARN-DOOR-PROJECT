@@ -119,6 +119,18 @@ body {
   margin-right: 15rem;
 }
 
+.nav-link__ask-for-form {
+  font-size: 0.6rem;
+  background-color: var(--bs-danger);
+  border-radius: 2rem;
+  padding: 0.2rem 0;
+  color: black;
+
+  &::after {
+    opacity: 0;
+  }
+}
+
 .navbar-toggler {
   position: relative;
   background-color: #000;
@@ -280,6 +292,7 @@ a[href*="mailto"] {
 
 .contact-form {
   width: 100%;
+  scroll-margin-top: 10rem;
 
   .contact-form__inputs {
     display: flex;
@@ -549,7 +562,7 @@ img[src*="left"] {
 .price-tag {
   position: absolute;
   bottom: -1rem;
-  right: -1rem;
+  left: -1rem;
   padding: 0.5rem 1.2rem;
   color: #000000;
   font-size: 1.5rem;
@@ -557,6 +570,18 @@ img[src*="left"] {
   background-color: var(--price-tag-bg);
   border-radius: 2rem;
   user-select: none;
+}
+
+.card-sys__book-button {
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+  padding: 0.2rem 1.3rem;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ff000085;
+  /* border-radius: 2rem; */
 }
 
 #horr-hack {
