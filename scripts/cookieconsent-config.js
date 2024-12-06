@@ -37,27 +37,27 @@ CookieConsent.run({
   },
 
   onFirstConsent: ({ cookie }) => {
-    console.log('onFirstConsent fired', cookie);
+    // console.log('onFirstConsent fired', cookie);
   },
 
   onConsent: ({ cookie }) => {
-    console.log('onConsent fired!', cookie)
+    // console.log('onConsent fired!', cookie)
   },
 
   onChange: ({ changedCategories, changedServices }) => {
-    console.log('onChange fired!', changedCategories, changedServices);
+    // console.log('onChange fired!', changedCategories, changedServices);
   },
 
   onModalReady: ({ modalName }) => {
-    console.log('ready:', modalName);
+    // console.log('ready:', modalName);
   },
 
   onModalShow: ({ modalName }) => {
-    console.log('visible:', modalName);
+    // console.log('visible:', modalName);
   },
 
   onModalHide: ({ modalName }) => {
-    console.log('hidden:', modalName);
+    // console.log('hidden:', modalName);
   },
 
   categories: {
