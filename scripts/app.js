@@ -89,8 +89,7 @@ if (productCards && sysId) {
   productCards.forEach((card, index) => {
     const textContainer = card.querySelector('.card-sys__text')
     const bookButton = document.createElement('a');
-    // const buttonURL = new URL('https://barn-door.sk');
-    const buttonURL = new URL('http://127.0.0.1:5500/');
+    const buttonURL = new URL('https://barn-door.sk');
     buttonURL.searchParams.set('sys', system[index]);
     buttonURL.hash = '#contact-form'
     bookButton.setAttribute('class', 'card-sys__book-button');
