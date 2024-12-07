@@ -61,15 +61,15 @@
   bottom: -1rem;
   right: 0;
   padding: 0.4rem 1.5rem;
-  color: #000000;
+  color: white;
   font-size: 1.2rem;
   font-weight: bold;
-  background-color: #ff000085;
+  background-color: #ff0000;
   transition: all 0.3s ease;
+  filter: drop-shadow(-3px 0 4px #000000bb);
 
   &:hover {
-    color: white;
-    background-color: red;
+    background-color: var(--fancy-color);
   }
 }
 
