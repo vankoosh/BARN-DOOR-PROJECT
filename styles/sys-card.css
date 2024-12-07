@@ -1,0 +1,80 @@
+.card-sys {
+  margin: 2rem auto;
+  margin-bottom: 5rem;
+  box-shadow: 0px 10px 13px -7px #000000, -1px 5px 10px -1px rgba(0, 0, 0, 0);
+  background-color: #ffffff;
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in;
+  opacity: 0;
+}
+
+.overlay:hover .overlay__img {
+  opacity: 1;
+}
+
+.card-sys__text {
+  font-family: var(--main-font);
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  height: 240px;
+  color: #00000096;
+}
+
+.card-sys__text p:not(.akcia) {
+  margin: 0.5rem 0 0 5rem;
+}
+
+.card-sys__text h5 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: var(--fancy-color);
+}
+
+.price-tag {
+  position: absolute;
+  bottom: -2rem;
+  left: -1rem;
+  padding: 0.5rem 1.2rem;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--fancy-color);
+  border-radius: 2rem;
+  user-select: none;
+}
+
+.card-sys__book-button {
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+  padding: 0.2rem 1.3rem;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ff000085;
+}
+
+#horr-hack {
+  font-size: 1rem;
+}
+
+.akcia {
+  background-color: #f00;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+}

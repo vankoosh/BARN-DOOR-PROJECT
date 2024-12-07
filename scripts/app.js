@@ -16,12 +16,8 @@ const sysId = document.querySelector('main')?.dataset.sysId ?? false;
 
 window.addEventListener("scroll", () => {
   let scroll = window.scrollY;
-  logoDown(scroll);
-});
-
-function logoDown(scroll) {
   logo.style.top = scroll >= 22 ? "0rem" : "-0.6rem";
-}
+});
 
 !function (f, b, e, v, n, t, s) {
 
