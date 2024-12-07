@@ -55,7 +55,7 @@
     display: inline-block;
     border-radius: 1rem;
     padding: 0.4rem;
-    background: url("/UTILITIES/IMGS/chevron-down.png") no-repeat right white;
+    background: url("../UTILITIES/IMGS/chevron-down.png") no-repeat right white;
     appearance: none;
     background-position-x: 95%;
 

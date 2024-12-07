@@ -34,6 +34,7 @@ window.addEventListener("scroll", () => {
 fbq('init', '787180756425947');
 fbq('track', 'PageView');
 
+// create systemyDropdown, check for URL params, from mergedSystemyArray create option elem, if selected in URL, preselect option
 if (formInputsContainer) {
   const systemyDropdown = document.createElement('select');
   const url = new URL(window.location.href)
@@ -44,21 +45,22 @@ if (formInputsContainer) {
   systemyDropdown.id = 'systemy';
 
   mergedSystemyArray.forEach((system, index) => {
-    const newSystemyDropdownOption = document.createElement('option');
-    newSystemyDropdownOption.value = system;
-    newSystemyDropdownOption.innerText = `${system}`;
-    systemyDropdown.appendChild(newSystemyDropdownOption);
+    const newSystemsDropdownOption = document.createElement('option');
+    newSystemsDropdownOption.value = system;
+    newSystemsDropdownOption.innerText = `${system}`;
+    systemyDropdown.appendChild(newSystemsDropdownOption);
   });
 
   formInputsContainer.appendChild(systemyDropdown);
 
-
   if (selectedSystem) {
     let selectedIndex;
-    const selectedChoice = Array.from(systemyDropdown.children).forEach((e, index) => {
-      if (e.value == selectedSystem) {
-        selectedIndex = index
-      }
+    Array.from(systemyDropdown.children).forEach((option, index) => {
+      // if (option.value == selectedSystem) {
+      //   selectedIndex = index
+      // }
+
+      option.value == selectedSystem ? selectedIndex = index : null
     })
     systemyDropdown.selectedIndex = selectedIndex;
   }
