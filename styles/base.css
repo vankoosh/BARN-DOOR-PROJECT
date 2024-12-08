@@ -259,7 +259,7 @@ img[src*="left"] {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: space-around;
+  justify-content: center;
   position: relative;
   padding: 0 1rem;
 }

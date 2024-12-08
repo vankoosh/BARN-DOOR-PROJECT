@@ -4,7 +4,8 @@
 }
 
 video {
-  width: 650px;
+  width: 96vw;
+  max-width: 650px;
   height: auto;
 }
 
