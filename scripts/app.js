@@ -56,10 +56,6 @@ if (formInputsContainer) {
   if (selectedSystem) {
     let selectedIndex;
     Array.from(systemyDropdown.children).forEach((option, index) => {
-      // if (option.value == selectedSystem) {
-      //   selectedIndex = index
-      // }
-
       option.value == selectedSystem ? selectedIndex = index : null
     })
     systemyDropdown.selectedIndex = selectedIndex;
@@ -91,7 +87,7 @@ if (productCards && sysId) {
   productCards.forEach((card, index) => {
     const textContainer = card.querySelector('.card-sys__text')
     const bookButton = document.createElement('a');
-    const buttonURL = new URL('https://barn-door.sk');
+    const buttonURL = new URL(window.location.origin);
     buttonURL.searchParams.set('sys', system[index]);
     buttonURL.hash = '#contact-form'
     bookButton.setAttribute('class', 'card-sys__book-button');
