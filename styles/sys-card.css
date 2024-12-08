@@ -1,14 +1,17 @@
 .card-sys {
-  margin: 2rem auto;
-  margin-bottom: 5rem;
   box-shadow: 0px 10px 13px -7px #000000, -1px 5px 10px -1px rgba(0, 0, 0, 0);
   background-color: #ffffff;
   position: relative;
+  width: 100%;
 }
 
 .overlay {
   position: relative;
   overflow: hidden;
+}
+
+.card-sys__img {
+  width: 100%;
 }
 
 .overlay__img {
@@ -17,6 +20,7 @@
   left: 0;
   transition: 0.3s ease-in;
   opacity: 0;
+  width: 100%;
 }
 
 .overlay:hover .overlay__img {
@@ -27,13 +31,15 @@
   font-family: var(--main-font);
   margin-top: 3rem;
   margin-bottom: 2rem;
+  padding: 0 2rem 0;
   position: relative;
-  height: 280px;
+  min-height: 240px;
   color: #00000096;
-}
+  font-size: 0.8rem;
 
-.card-sys__text p:not(.akcia) {
-  margin: 0.5rem 0 0 5rem;
+  p {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .card-sys__text h5 {
@@ -41,13 +47,14 @@
   margin-bottom: 2rem;
   font-weight: bold;
   color: var(--fancy-color);
+  font-size: 1rem;
 }
 
 .price-tag {
   position: absolute;
   bottom: -1.5rem;
   left: 1rem;
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 0.8rem;
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -60,17 +67,25 @@
   position: absolute;
   bottom: -1rem;
   right: 0;
-  padding: 0.4rem 1.5rem;
+  padding: 0.3rem 0.8rem;
   color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: #ff0000;
+  font-size: 1rem;
+  background-color: #ff00008a;
   transition: all 0.3s ease;
   filter: drop-shadow(-3px 0 4px #000000bb);
 
   &:hover {
     background-color: var(--fancy-color);
   }
+}
+
+.card-sys.card-sys__akcia .price-tag,
+.card-sys.card-sys__akcia .card-sys__book-button {
+  display: none;
+}
+
+.card-sys.card-sys__akcia .card-sys__text {
+  min-height: 100px;
 }
 
 #horr-hack {
@@ -83,4 +98,26 @@
   margin: 0 auto;
   display: block;
   color: #fff;
+}
+
+@media screen and (min-width: 578px) {
+  .card-sys {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-sys {
+    width: calc(33.3% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card-sys {
+    width: calc(25% - 2rem);
+  }
+
+  .card-sys__text {
+    min-height: 280px;
+  }
 }
