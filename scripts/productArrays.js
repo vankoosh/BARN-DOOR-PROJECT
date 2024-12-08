@@ -15,7 +15,7 @@ export const doplnky = ["Madlo BARNDOOR", "Madlo 6 okrúhle čierne", "Madlo 7 o
 
 export default function getMergedArray() {
   return [
-    "Vyberte systém, o ktorý máte záujem",
+    "Systém, o ktorý máte záujem",
     ...uhlikoveSystemy,
     ...nerezSystemy,
     ...patinaSystemy,
