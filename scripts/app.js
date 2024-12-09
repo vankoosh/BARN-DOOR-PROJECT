@@ -85,15 +85,23 @@ if (productCards && sysId) {
   }
 
   productCards.forEach((card, index) => {
-    const textContainer = card.querySelector('.card-sys__text')
-    const bookButton = document.createElement('a');
-    const buttonURL = new URL(window.location.origin);
-    buttonURL.searchParams.set('sys', system[index]);
-    buttonURL.hash = '#contact-form'
+    const bookButton = document.createElement('a')
+    const url = window.location.origin
+
+    if (url == 'https://vankoosh.github.io') {
+      bookButton.setAttribute('href', '../index.html?sys=' + system[index] + '#contact-form')
+    } else {
+      const buttonURL = new URL(window.location.origin);
+      buttonURL.searchParams.set('sys', system[index]);
+      buttonURL.hash = '#contact-form'
+      bookButton.setAttribute('href', buttonURL)
+    }
+
     bookButton.setAttribute('class', 'card-sys__book-button');
-    bookButton.setAttribute('href', buttonURL);
-    bookButton.setAttribute('data-sys-id', system[index]);
+    bookButton.setAttribute('data-sys-id', system[index])
     bookButton.innerText = 'Objednať'
-    textContainer.appendChild(bookButton);
+
+    const textContainer = card.querySelector('.card-sys__text')
+    textContainer.appendChild(bookButton)
   })
 }
