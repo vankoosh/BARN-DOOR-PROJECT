@@ -302,6 +302,10 @@ img[src*="left"] {
   color: #808000a6;
 }
 
+/*  */
+/* ----------------------MEDIA QUERIES */
+/*  */
+
 @media only screen and (max-width: 1630px) {
   #nav-link__last {
     margin-right: 10rem;
@@ -317,22 +321,11 @@ img[src*="left"] {
   }
 }
 
-@media only screen and (max-width: 1460px) {
-  #hero__button {
-    top: 28rem;
-    font-size: 1rem;
-    width: 13rem;
-    padding-top: 0.8rem;
-  }
-}
+@media only screen and (max-width: 1460px) {}
 
 @media only screen and (max-width: 1360px) {
   #nav-link__last {
     margin-right: 2rem;
-  }
-
-  #hero__text {
-    top: 13rem;
   }
 
   #hero-sys {
@@ -367,17 +360,6 @@ img[src*="left"] {
     margin: 1.5rem 0 10rem;
   }
 
-  #hero__text {
-    top: 12rem;
-  }
-
-  #hero__button {
-    top: 24rem;
-    font-size: 0.8rem;
-    width: 11rem;
-    padding-top: 0.9rem;
-  }
-
   .navbar-collapse {
     padding-top: 2rem;
   }
@@ -396,24 +378,6 @@ img[src*="left"] {
     width: calc(1vw + .9rem);
     height: calc(1vw + .9rem);
     margin-right: 3rem;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  #hero__text {
-    top: 10rem;
-  }
-
-  #hero__text h1 {
-    font-size: calc(2vw + 0.9rem);
-    color: var(--fancy-color);
-  }
-
-  #hero__button {
-    top: 21rem;
-    font-size: 0.8rem;
-    width: 11rem;
-    padding-top: 0.9rem;
   }
 }
 
@@ -443,23 +407,6 @@ img[src*="left"] {
 }
 
 @media only screen and (max-width: 900px) {
-  #hero__text {
-    top: 6rem;
-    font-weight: bold;
-  }
-
-  #hero__text h1 {
-    font-size: calc(2vw + 0.5rem);
-  }
-
-  #hero__button {
-    top: 15rem;
-    width: 10rem;
-    font-size: 0.7rem;
-    padding-top: 0.7rem;
-    height: 2.5rem;
-  }
-
   .cookie-banner {
     width: 95%;
     inset: auto 1rem 1rem 1rem;
@@ -507,30 +454,13 @@ img[src*="left"] {
     width: 40px;
   }
 
-  #hero__button {
-    padding-top: 0.5rem;
-    height: 2rem;
-  }
-
   .column {
     flex: 100%;
   }
 }
 
-@media only screen and (max-width: 680px) {
-  #hero__button {
-    top: 13rem;
-    width: 10rem;
-    font-size: 0.7rem;
-    padding-top: 0.5rem;
-    height: 2rem;
-  }
-}
-
 @media only screen and (max-width: 600px) {
-  #hero__button {
-    display: none;
-  }
+
 
   #title-sys {
     font-size: 1.2rem;
@@ -551,20 +481,6 @@ img[src*="left"] {
 }
 
 @media only screen and (max-width: 500px) {
-  #hero__text {
-    top: 3rem;
-    left: 2rem;
-    font-weight: bold;
-  }
-
-  #hero__text h1 {
-    font-size: calc(2vw + 1rem);
-    color: black;
-    font-weight: bold;
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff,
-      0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
-  }
-
   #logo {
     clip-path: polygon(0 0, 32% 0, 32% 100%, 0% 100%);
   }
