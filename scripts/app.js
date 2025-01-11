@@ -20,7 +20,6 @@ window.addEventListener("scroll", () => {
 });
 
 !function (f, b, e, v, n, t, s) {
-
   if (f.fbq) return;
   n = f.fbq = function () {
     n.callMethod ?
@@ -34,7 +33,6 @@ window.addEventListener("scroll", () => {
 fbq('init', '787180756425947');
 fbq('track', 'PageView');
 
-// create systemyDropdown, check for URL params, from mergedSystemyArray create option elem, if selected in URL, preselect option
 if (formInputsContainer) {
   const systemyDropdown = document.createElement('select');
   const url = new URL(window.location.href)

@@ -58,7 +58,8 @@
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: var(--fancy-color);
+  /* background-color: var(--fancy-color); */
+  background-color: black;
   border-radius: 2rem;
   user-select: none;
 }
@@ -70,11 +71,11 @@
   padding: 0.3rem 0.8rem;
   color: white;
   font-size: 1rem;
-  background-color: #ff00008a;
+  background-color: #ff0000;
   transition: all 0.3s ease;
-  filter: drop-shadow(-3px 0 4px #000000bb);
 
   &:hover {
+    filter: drop-shadow(-3px 0 4px #000000bb);
     background-color: var(--fancy-color);
   }
 }
@@ -114,7 +115,7 @@
 
 @media screen and (min-width: 1280px) {
   .card-sys {
-    width: calc(25% - 2rem);
+    /* width: calc(25% - 2rem); */
   }
 
   .card-sys__text {
