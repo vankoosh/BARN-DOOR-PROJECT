@@ -115,6 +115,10 @@ a[href*="mailto"] {
     display: flex;
     justify-content: space-between;
   }
+
+  &__med {
+    display: none;
+  }
 }
 
 .cookie-banner {
