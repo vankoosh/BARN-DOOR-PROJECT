@@ -302,6 +302,10 @@ img[src*="left"] {
   color: #808000a6;
 }
 
+#kontakt {
+  /* scroll-margin-top: -1000px; */
+}
+
 /*  */
 /* ----------------------MEDIA QUERIES */
 /*  */
@@ -320,8 +324,6 @@ img[src*="left"] {
     width: 45%;
   }
 }
-
-@media only screen and (max-width: 1460px) {}
 
 @media only screen and (max-width: 1360px) {
   #nav-link__last {
