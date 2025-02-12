@@ -1,8 +1,8 @@
 .contact-form {
+  display: none;
   width: 80%;
   max-width: 900px;
   margin: 0 auto 3rem;
-  display: flex;
   flex-direction: column;
 
   .contact-form__inputs {
