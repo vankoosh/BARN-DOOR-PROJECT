@@ -103,7 +103,7 @@
     </div>
   </section>
   <!-- https://formsubmit.co/documentation -->
-  <form action="https://formsubmit.co/info@barn-door.sk" method="POST" class="contact-form" id="contact-form" />
+  <!-- <form action="https://formsubmit.co/info@barn-door.sk" method="POST" class="contact-form" id="contact-form" />
   <input type="hidden" name="_next" value="https://www.barn-door.sk/">
   <input type="hidden" name="_captcha" value="false">
   <input type="text" name="_honey" style="display:none" class="contact-form__med">
@@ -115,7 +115,7 @@
   </div>
   <textarea id="message" name="text-spravy" rows="8" placeholder="Vaša správa..."></textarea>
   <input type="submit" value="Odoslať správu">
-  </form>
+  </form> -->
   <div id="gmap">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d659.5071191156803!2d18.27196762926114!3d48.60929818542921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714ca4ebb49e0bb%3A0x8cb268dd8def38ca!2sBarnDoor%20Posuvn%C3%A9%20Dvere!5e0!3m2!1sen!2sfi!4v1623852526808!5m2!1sen!2sfi"
@@ -132,6 +132,42 @@
     <img height="1" width="1" style="display: none"
       src="https://www.facebook.com/tr?id=787180756425947&ev=PageView&noscript=1" />
   </noscript>
+  <script>
+    function cleanURL() {
+      let currentURL = window.location.href;
+
+      if (currentURL.includes("index.html")) {
+        // 1. Remove "index.html" from the URL:
+        let cleanURL = currentURL.replace("index.html", "");
+
+        // 2. Handle trailing slash:
+        //    a. If you want a trailing slash:
+        // if (!cleanURL.endsWith("/")) {
+        //   cleanURL += "/";
+        // }
+
+        //    b. If you want to remove a trailing slash after removing index.html:
+        if (cleanURL.endsWith("/")) {
+          cleanURL = cleanURL.slice(0, -1); // Remove the last character (/)
+        }
+
+        // 3. Update the URL in the browser (without reloading):
+        if (window.history && window.history.pushState) {
+          window.history.pushState(null, document.title, cleanURL);
+        } else {
+          // Fallback for older browsers (replace the entire URL - will cause a reload):
+          window.location.href = cleanURL;
+        }
+
+        // 4. Important:  Server-side configuration is still REQUIRED!
+        //    This JavaScript only changes the URL in the browser; your server
+        //    must be configured to handle requests to the clean URL.
+      }
+    }
+
+    // Call the function when the page loads (or when appropriate):
+    window.addEventListener('DOMContentLoaded', cleanURL);
+  </script>
 </body>
 
 </html>
