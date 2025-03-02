@@ -102,40 +102,4 @@
     <img height="1" width="1" style="display: none"
       src="https://www.facebook.com/tr?id=787180756425947&ev=PageView&noscript=1" />
   </noscript>
-  <script>
-    function cleanURL() {
-      let currentURL = window.location.href;
-
-      if (currentURL.includes("index.html")) {
-        // 1. Remove "index.html" from the URL:
-        let cleanURL = currentURL.replace("index.html", "");
-
-        // 2. Handle trailing slash:
-        //    a. If you want a trailing slash:
-        // if (!cleanURL.endsWith("/")) {
-        //   cleanURL += "/";
-        // }
-
-        //    b. If you want to remove a trailing slash after removing index.html:
-        if (cleanURL.endsWith("/")) {
-          cleanURL = cleanURL.slice(0, -1); // Remove the last character (/)
-        }
-
-        // 3. Update the URL in the browser (without reloading):
-        if (window.history && window.history.pushState) {
-          window.history.pushState(null, document.title, cleanURL);
-        } else {
-          // Fallback for older browsers (replace the entire URL - will cause a reload):
-          window.location.href = cleanURL;
-        }
-
-        // 4. Important:  Server-side configuration is still REQUIRED!
-        //    This JavaScript only changes the URL in the browser; your server
-        //    must be configured to handle requests to the clean URL.
-      }
-    }
-
-    // Call the function when the page loads (or when appropriate):
-    window.addEventListener('DOMContentLoaded', cleanURL);
-  </script>
 </body>
